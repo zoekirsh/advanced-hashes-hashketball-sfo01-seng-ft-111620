@@ -206,6 +206,7 @@ def big_shoe_rebounds
       end
     end
   end
+  return big_shoe_counter[:rebounds]
 end
 
 
