@@ -172,3 +172,7 @@ def team_names
   end
   return both_teams
 end
+
+def player_numbers
+  
+end
