@@ -181,9 +181,9 @@ def player_numbers(team_name)
   game_hash.each do |team, teamHash|
     if teamHash[:team_name] == team_name 
       teamHash[:players].each do |hash|
-        binding.pry
         all_player_numbers << hash[:number]
       end
+    end
   end
   return all_player_numbers.sort 
 end
