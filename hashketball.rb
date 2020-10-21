@@ -128,6 +128,7 @@ def game_hash
 end
 
 def helper_hash 
+  # how would i get this method to return a new hash of hashes with all the players?
   game_hash.each do |team, teamHash| 
     teamHash.each do |infoKeys, data|
       if infoKeys == :players 
@@ -147,5 +148,12 @@ def num_points_scored(player_name)
   end   
 end 
 
+def shoe_size(player_name)
+  game_hash.each do |team, teamHash| 
+    teamHash[:players].each do |hash|
+      return hash[:shoe] if hash[:player_name] == player_name
+    end 
+  end  
+end
 
 
