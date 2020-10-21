@@ -201,7 +201,7 @@ def big_shoe_rebounds
   big_shoe_counter = {:shoe => 0, :rebounds => 0}
   game_hash.each do |team, teamHash|
     teamHash[:players].each do |hash|
-      if [hash][:shoe] > big_shoe_counter[:name] 
+      if [hash][:shoe] > big_shoe_counter[:shoe] 
         big_shoe_counter[:name] = hash[:shoe] && big_shoe_counter[:rebounds] = hash[:rebounds]
       end
     end
