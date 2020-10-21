@@ -1,4 +1,5 @@
-# Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -126,4 +127,20 @@ def game_hash
   }
 end
 
-# Write code here
+def helper_hash 
+  game_hash.each do |team, teamHash| 
+    teamHash.each do |infoKeys, data|
+      if infoKeys == :players 
+        player_hash = Hash[data.map { |player| [player[:player_name], player] } ]
+      end 
+    end
+  end
+end
+
+
+def num_points_scored(player_name)
+    #game_hash
+end 
+
+
+
