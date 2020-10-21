@@ -187,6 +187,8 @@ def player_numbers(team_name)
   return all_player_numbers.sort 
 end
 
-
+def player_stats(player_name)
+  
+end
 
 
