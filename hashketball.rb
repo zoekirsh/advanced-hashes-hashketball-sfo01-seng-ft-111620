@@ -174,5 +174,16 @@ def team_names
 end
 
 def player_numbers(team_name)
+  #game_hash -> :home -> :players -> [ { :number 
+  #collect all :number and store in an array, return sorted array
+  
+  player_numbers = []
+  game_hash.each do |team, teamHash|
+    if teamHash[:team_name] == team_name 
+      
+  end
   
 end
+
+
+
