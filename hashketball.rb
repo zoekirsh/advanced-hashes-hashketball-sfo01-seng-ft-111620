@@ -170,5 +170,5 @@ def team_names(hash)
   game_hash.each do |team, teamHash|
     both_teams << teamHash[:team_name]
   end
-  both_teams
+  return both_teams
 end
