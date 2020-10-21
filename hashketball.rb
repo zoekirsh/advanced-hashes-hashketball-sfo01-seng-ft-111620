@@ -196,7 +196,12 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  
+  #iterate through each team, update a shoe size counter -> hash? {name => shoe}
+  #return the :rebounds of that :player_name
+  big_shoe_counter = {:name => 0}
+  game_hash.each do |team, teamHash|
+    teamHash
+  end
 end
 
 
