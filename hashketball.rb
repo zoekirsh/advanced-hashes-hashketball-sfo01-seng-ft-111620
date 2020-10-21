@@ -203,7 +203,7 @@ def big_shoe_rebounds
     teamHash[:players].each do |hash|
       binding.pry
       if [hash][:shoe] > big_shoe_counter[:shoe] 
-        big_shoe_counter[:name] = hash[:shoe] && big_shoe_counter[:rebounds] = hash[:rebounds]
+        big_shoe_counter[:shoe] = hash[:shoe] && big_shoe_counter[:rebounds] = hash[:rebounds]
       end
     end
   end
