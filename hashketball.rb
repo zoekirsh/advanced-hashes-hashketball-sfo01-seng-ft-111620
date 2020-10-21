@@ -163,7 +163,7 @@ def team_colors(team_name)
   end
 end
 
-def team_names(hash)
+def team_names
   #game_hash -> :home -> :team_name 
   #collect into an array and return array of both team team_names
   both_teams = []
